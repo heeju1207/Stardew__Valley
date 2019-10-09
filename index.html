@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>스타듀밸리</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,900&display=swap&subset=korean" rel="stylesheet">
+
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body{margin: 0;background-color: #f7efdc;}
+		h2{font-weight: 900;}
+		#monitor{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;}
+		.ppp{width: 800px; margin: auto; position: relative;}
+		.d2{position: absolute; top: 0px; left: -20px; width: 380px; height: 630px; background-color: white;}
+		.d3{position: absolute; top: 100px; left: -20px; width: 380px; height: 390px; background-color: white;}
+		.d3{position: absolute; top: 50px; left: -20px; width: 380px; height: 420px; background-color: white;}
+		.d4{position: absolute; top: 0px; left: -20px; width: 800px; height: 500px; background-color: white; z-index: 3;}
+		.d5{position: absolute; top: 0px; left: -20px; width: 800px; height: 600px; background-color: white; z-index: 1;}
+		.d6{position: absolute; top: 50px; left: -20px; width: 800px; height: 500px; background-color: white; z-index: 1;}
+		.house1{position: absolute; top: 115px; left: 495px;}
+		.house2{position: absolute; top: 255px; left: 430px;}
+
+		#sec1{height: 550px;}
+		#sec2{height: 1000px;}
+		#sec3{height: 725px;}
+		#sec4{height: 540px;}
+		#sec5{height: 1350px;}
+		#sec6{height: 850px;}
+		#sec7{height: 950px;}
+		#sec8{height: 1300px;}
+		#sec9{height: 100px;}
+
+		#op{position: absolute; top: 270px; left: 250px; z-index: 0;}
+		#scroll1{position: absolute; top: 550px; left: 310px; width: 250px; z-index: 1;}
+		#p1{position: absolute; top: 270px; left: 500px; width: 300px; height: 435px; background-color: white; padding: 23px 15px 15px 15px; line-height: 1.7em; opacity: 0;}
+		#p2{padding: 23px 15px 15px 50px; line-height: 1.7em;}
+		#hhh1{padding: 15px 15px 0px 50px;}
+		#back{width: 800px; top: 250px; left: 45px; position: absolute; z-index: 0; opacity: 0;}	
+		#rider{position: absolute; z-index: 1; top: 800px; left: 60px;background-color: white; padding: 15px; opacity: 0;}
+		#ch{position: absolute; z-index: 1; width: 390px; top: 260px; left: 430px opacity: 0;}
+		#back2{width: 950px; top: 150px; left: 200px; position: absolute; z-index: 0; opacity: 0;}
+		#back3{width: 950px; top: 750px; left: -200px; position: absolute; z-index: 0;opacity: 0;}
+		#p3{padding: 23px 15px 15px 50px; line-height: 1.7em;}
+		#house11{width: 120px;}
+		#house22{width: 120px;}
+		#npc1{width: 700px; top: 70px; left: 10px; position: absolute; z-index: 1;}
+		#p4{padding: 13px 9px 9px 50px;}
+		#back4{width: 750px; top: 450px; left: 400px; position: absolute; z-index: 2; opacity: 0;}
+		#npc2{width: 700px; top: 110px; left: 50px; position: absolute; z-index: 1;}
+		#back5{width: 850px; top: 500px; left: -200px; position: absolute; z-index: 0; opacity: 0;}
+		#npc3{width: 600px; top: 110px; left: 60px; position: absolute; z-index: 1;}
+		#back6{width: 850px; top: 580px; left: 200px; position: absolute; z-index: 1; opacity: 0;}
+
+		#an2{opacity: 0;}
+		#an3{opacity: 0;}
+		#an4{opacity: 0;}
+		#an5{opacity: 0;}
+		#an6{opacity: 0;}
+		#an7{opacity: 0;}
+		#an8{opacity: 0;}
+
+
+		@keyframes nton{
+			from{opacity: 0;}to{opacity: 1;}}
+
+		@keyframes ftoe1{
+			from{left:-100px; opacity: 0;}to{left: 60px; opacity: 1;}}
+
+		@keyframes etof1{
+			from{left:600px; opacity: 0;}to{left:500px; opacity: 1;}}
+
+		@keyframes ftoe2{
+			from{left:-100px; opacity: 0;}to{left: -20px; opacity: 1;}}
+
+		@keyframes etof2{
+			from{left:530px; opacity: 0;}to{left:430px; opacity: 1;}}
+
+		@keyframes back2{
+			from{left:400px; opacity: 0;}to{left:200px; opacity: 1;}}
+
+		@keyframes back3{
+			from{left:-400px; opacity: 0;}to{left:-200px; opacity: 1;}}	
+
+		@keyframes back4{
+			from{left:600px; opacity: 0;}to{left:400px; opacity: 1;}}
+
+		@keyframes an6{
+			from{left:600px; opacity: 0;}to{left:400px; opacity: 1;}}			
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<section class="ppp" id="sec1">
+		<img src="open.png" id="op">
+		<img src="scroll.gif" id="scroll1">
+		<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/232021152&color=%232c7378&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+		
+	</section>
+
+	<section class="ppp" id="sec2">
+
+		<img src="back.png" id="back">
+		<img src="Horse_rider.png" id="rider">
+		
+		<p id="p1">Stardew Valley는 오픈 엔드형 농장 체험 RPG입니다! 여러분은 스타듀 밸리에 있는 할아버지의 오래된 농장을 물려받게 됩니다.<br>
+		그리고 대대로 전해 내려오는 도구와 코인 몇 개로 무장하고 새로운 삶을 시작하게 됩니다. 자급자족하면서 웃자란 농경지를 잘 나가는 내 농장으로 탈바꿈 시킬 수 있을까요?<br>
+		쉽지는 않을 겁니다. 조자 코퍼레이션이 마을에 찾아온 뒤로 예전부터 고수하던 삶의 방식이 사라지고 있기 때문이지요. 마을에서 가장 활발한 곳이던 마을 회관은 이제 엉망이 되고 말았습니다.<br>
+		하지만 스타듀 밸리엔 다양한 기회가 있습니다. 여러분이 조금만 노력한다면 스타듀 밸리에 과거의 영광을 되찾아주는 영웅이 될 수도 있습니다!</p>
+
+	</section>
+
+	<section class="ppp" id="sec3">
+		<div class="d2" id="an2">
+			<h2 id="hhh1">캐릭터 생성</h2>
+
+			<p id="p2">
+			캐릭터 생성은 캐릭터 외형, 성별, 이름과 농장 이름, 좋아하는 것, 좋아하는 동물을 결정하는 단계입니다.
+			</p>
+
+			<ul id="p2">
+				<li>성별은 남자와 여자, 외형은 24가지의 피부색, 32가지의 헤어, 112가지의 옷, 20개의 악세사리가 있으며, 좋아하는 동물로는 강아지와 고양이가 있습니다.</li><br>
+				<li>눈 색깔, 머리 색깔, 옷 색깔 옆의 조작바로 색상, 채도, 밝기를 조절할 수 있습니다.</li><br>
+  				<li>좋아하는 동물은 후에 어떤 동물을 농장에서 기를 지 	결정하는 선택지입니다.</li><br>
+  				<li>성별은 후에 결혼을 할 때 문제가 되지 않습니다. 즉 동성결혼도 가능합니다.</li>
+			</ul>
+		</div>
+		<div id="ch">
+			<img src="Character.png">
+		</div>
+	
+
+	</section>
+
+	<section class="ppp" id="sec4">
+		
+	<div id="an3">
+		
+		<div class="house1">
+			<img src="Forest.png" id="house11">
+			<img src="Standard.png" id="house11">
+		</div>
+
+		<div class="house2">
+			<img src="Riverland.png" id="house22">
+			<img src="Wilderness.png" id="house22">
+			<img src="Hilltop.png" id="house22">
+		</div>
+
+	</div>
+		
+		
+
+	<div class="d3" id="an4">
+
+		<h2 id="p3">농장종류</h2>
+
+		<p id="p3">플레이어는 5종류의 농장 중 하나를 고를 수 있습니다. 각각의 농장은 고유의 특징을 가지고 있고, 특정 스킬을 기르는 데 특화되어 있습니다.
+		<br>
+		농장을 고르고 나면 다른 농장으로 바꿀 수 없고, 캐릭터는 생성된 농장에 귀속됩니다.
+		<br>
+		즉 캐릭터만 다른 농장파일로 옮길 수 없습니다. 농장 전체의 크기는 모두 같지만, 실질적으로 사용가능한 땅의 크기에는 차이가 있습니다.</p>
+	</div>
+
+	</section>
+
+	<section class="ppp" id="sec5">
+		<img src="back2.png" id="back2">
+		<img src="back3.png" id="back3">
+
+		<div class="d3" id="an5">
+			<h2 id="p3">마을 사람들</h2>
+
+			<p id="p3">스타듀 밸리의 캐릭터들입니다. 그들은 펠리칸 타운과 그 주변에 	사는 주민들입니다. 마을 사람들은 각기 일상을 보내고 있기 때문에 게임 시간에 따라 마을의 다른 곳에 있을 수 있습니다.
+			<br>
+			마을 사람들은 퀘스트를 주기도 하고, 플레이어는 그들의 애정을 높이기 위해 선물을 줄 수도 있습니다. 마을 사람들은 각기 특별히 좋아하는 것과 싫어하는 것이 있고, 선물에 따라 다르게 반응합니다.</p>
+
+		</div>
+
+
+	</section>
+
+	<section class="ppp" id="sec6">
+
+	<div class="d4" id="an6">
+
+		<h2 id="p4">결혼가능 NPC</h2>
+
+		<img src="npc1.PNG" id="npc1">
+		
+	</div>
+
+	<img src="back4.PNG" id="back4">
+	
+
+	</section>
+
+	<section class="ppp" id="sec7">
+
+		<div class="d5" id="an7">
+			<h2 id="p4">결혼불가능 NPC</h2>
+			<img src="npc2.PNG" id="npc2">
+		</div>
+
+		<img src="back5.png" id="back5">
+
+	</section>
+
+	<section class="ppp" id="sec8">
+
+		<div class="d6" id="an8">
+		<h2 id="p4">선물불가능 NPC</h2>
+		<img src="npc3.PNG" id="npc3">
+		</div>
+
+		<img src="back6.png" id="back6">
+		
+
+	</section>
+
+	<div id="monitor"></div>
+
+	<script type="text/javascript">
+		window.onscroll = function(){	
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		//console.log(t);
+		monitor.innerHTML = t + "px";
+
+		if (t>400) {back.style.animation = "nton 1s forwards";}
+		else{back.style.animation = "";}
+
+		if (t>533) {p1.style.animation = "etof1 1s forwards";}
+		else{p1.style.animation = "";}
+
+		if (t>600) {rider.style.animation = "ftoe1 1s forwards";}
+		else{rider.style.animation = "";}
+
+		if (t>933) {an2.style.animation = "ftoe2 1s forwards";}
+		else{an2.style.animation = "";}
+
+		if (t>983) {ch.style.animation = "etof2 1s forwards";}
+		else{ch.style.animation = "";}
+
+		if (t>1733) {an4.style.animation = "ftoe2 1s forwards";}
+		else{an4.style.animation = "";}
+
+		if (t>1800) {an3.style.animation = "nton 1s forwards";}
+		else{an3.style.animation = "";}
+
+		if (t>2166) {an5.style.animation = "ftoe2 1s forwards";}
+		else{an5.style.animation = "";}
+
+		if (t>2400) {back2.style.animation = "back2 1s forwards";}
+		else{back2.style.animation = "";}
+
+		if (t>2900) {back3.style.animation = "back3 1s forwards";}
+		else{back3.style.animation = "";}
+
+		if (t>3400) {an6.style.animation = "ftoe2 1s forwards";}
+		else{an6.style.animation = "";}
+
+		if (t>3900) {back4.style.animation = "back4 1s forwards";}
+		else{back4.style.animation = "";}
+
+		if (t>4444) {an7.style.animation = "ftoe2 1s forwards";}
+		else{an7.style.animation = "";}
+
+		if (t>4977) {back5.style.animation = "back3 1s forwards";}
+		else{back5.style.animation = "";}
+
+		if (t>5378) {an8.style.animation = "ftoe2 1s forwards";}
+		else{an8.style.animation = "";}
+
+		if (t>5999) {back6.style.animation = "back2 1s forwards";}
+		else{back6.style.animation = "";}
+	}
+
+	</script>
+
+
+	<footer>
+		<div class="ppp" id="sec9">
+			<p id="p3">copyright@copy ; 한경대학교 디자인학과 권희주. all right reserved.<br>
+			출처 : https://stardewvalleywiki.com/Stardew_Valley_Wiki
+			</p>
+		</div>
+		
+	</footer>
+
+</body>
+</html>
